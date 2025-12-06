@@ -1,3 +1,18 @@
+/*******************************************************
+ Monte Carlo Option Engine
+ Author: Vartika Dhayal
+
+ C++17 Monte Carlo pricing engine implementing:
+  - European call & put pricing under Black–Scholes
+  - Antithetic variance reduction
+  - Pathwise Delta & Vega estimators
+  - Asian up-and-out barrier option pricing
+  - Sobol-style low-discrepancy quasi-random normals
+  - 95% confidence intervals and runtime benchmarking
+  - OpenMP-ready loop structure for parallel Monte Carlo
+
+*******************************************************/
+
 #include <algorithm>
 #include <chrono>
 #include <cmath>
@@ -542,3 +557,4 @@ int main() {
 
     return 0;
 }
+
